@@ -76,7 +76,7 @@ export default function RecentSales() {
               View properties I&apos;m currently representing. These are exclusive listings available through my agency.
             </p>
             <a
-              href="https://idx.mlspin.com/MLS.IDX/MyListings?AgentId=CN255841"
+              href="https://idx.mlspin.com/MLS.IDX/Office?AgentId=CN255841"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center justify-center gap-2 rounded-full px-10 py-4 text-base font-semibold text-white shadow-lg transition hover:opacity-90"
