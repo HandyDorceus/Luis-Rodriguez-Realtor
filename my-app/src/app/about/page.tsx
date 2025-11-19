@@ -49,7 +49,7 @@ export default function About() {
             <Link className="hover:text-zinc-300" href="/">Home</Link>
             <Link className="hover:text-zinc-300" href="/about">About</Link>
             <Link className="hover:text-zinc-300" href="#contact">Contact</Link>
-            <Link className="hover:text-zinc-300" href="#recent-sales">Recent Sales</Link>
+            <Link className="hover:text-zinc-300" href="/recent-sales">Recent Sales</Link>
           </nav>
 
           {/* Top-right logo */}
