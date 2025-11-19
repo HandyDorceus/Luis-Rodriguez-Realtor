@@ -109,12 +109,13 @@ export default function Home() {
             <div className="mt-4 text-xs uppercase tracking-wide text-zinc-200">
               Real Estate Agent | Realtor
             </div>
-            <div className="mt-1 text-xs text-zinc-200">El Bostonian Street</div>
-            <div className="text-xs text-zinc-200">Boston, MA 021xx</div>
-            <div className="mt-3 text-xs text-zinc-100">857.620.0529</div>
+            <div className="mt-1 text-xs text-zinc-200">61 Boardman Street
+            </div>
+            <div className="text-xs text-zinc-200">Boston MA, 02128</div>
+            <div className="mt-3 text-xs text-zinc-100">617.663.0679</div>
             <div className="text-xs text-zinc-100">
-              <a className="hover:underline" href="mailto:lrodriguez@reitboston.com">
-                lrodriguez@reitboston.com
+              <a className="hover:underline" href="mailto:Lrodriguez@sellinboston.com">
+                Lrodriguez@sellinboston.com
               </a>
             </div>
           </div>
