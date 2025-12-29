@@ -7,41 +7,6 @@ const NAVY = "#2C3E5B";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-zinc-900 antialiased">
-      {/* ===== Top Nav ===== */}
-      <header className="w-full" style={{ backgroundColor: NAVY }}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          {/* Brand */}
-          <div className="flex items-center gap-3">
-            <div className="flex flex-col leading-tight">
-              <span className="text-xl font-bold tracking-wide text-white sm:text-2xl">
-                LUIS RODRIGUEZ
-              </span>
-              <span className="text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-300">
-                Real Estate Agent | Realtor
-              </span>
-            </div>
-          </div>
-
-          {/* Nav Links */}
-          <nav className="hidden items-center gap-8 text-sm font-semibold uppercase tracking-wide text-white md:flex">
-            <Link className="hover:text-zinc-300" href="/">Home</Link>
-            <Link className="hover:text-zinc-300" href="/about">About</Link>
-            <Link className="hover:text-zinc-300" href="#contact">Contact</Link>
-            <Link className="hover:text-zinc-300" href="/recent-sales">Recent Sales</Link>
-          </nav>
-
-          {/* Top-right logo */}
-          <div className="hidden md:block">
-            <Image
-              src="/images/Logo-A.png"
-              alt="Reference Real Estate Logo"
-              width={50}
-              height={50}
-              className="h-12 w-12 object-contain"
-            />
-          </div>
-        </div>
-      </header>
 
       {/* ===== Hero ===== */}
       <section id="home" className="relative w-full">
