@@ -68,7 +68,9 @@ export default function About() {
                   Looking for your first home in Boston? Let&apos;s talk.
                 </p>
                 <a
-                  href="mailto:Lrodriguez@sellinboston.com"
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0XZGYJmk-aEVgerXz9SYqAFMwPOTpJimBcW5HovqL9CfBXtgg_F8p-TEBlpLxPBMvPFSAPCby-"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-90"
                   style={{ backgroundColor: NAVY }}
                 >

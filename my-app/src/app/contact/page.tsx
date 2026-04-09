@@ -10,15 +10,17 @@ import Footer from "@/components/Footer";
 const NAVY = "#2C3E5B";
 
 const HOW_OPTIONS = [
+  "What's my house worth?",
   "Buying a Home",
   "Selling a Home",
   "How can I invest?",
-  "What's my house worth?",
   "Other",
 ];
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -34,9 +36,22 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please email Luis directly at Lrodriguez@sellinboston.com.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -193,12 +208,16 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {error && (
+                <p className="text-sm text-red-600">{error}</p>
+              )}
               <button
                 type="submit"
-                className="w-full rounded-full py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-90 sm:w-auto sm:px-10"
+                disabled={submitting}
+                className="w-full rounded-full py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-90 disabled:opacity-60 sm:w-auto sm:px-10"
                 style={{ backgroundColor: NAVY }}
               >
-                Send Message
+                {submitting ? "Sending…" : "Send Message"}
               </button>
             </form>
           )}

@@ -172,13 +172,15 @@ export default function Home() {
               <h2 className="mb-8 text-4xl font-bold sm:text-5xl" style={{ color: NAVY }}>
                 Home Today
               </h2>
-              <Link
-                href="#contact"
+              <a
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0XZGYJmk-aEVgerXz9SYqAFMwPOTpJimBcW5HovqL9CfBXtgg_F8p-TEBlpLxPBMvPFSAPCby-"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-semibold text-white shadow-md transition hover:opacity-90"
                 style={{ backgroundColor: NAVY }}
               >
                 Book a Meeting
-              </Link>
+              </a>
             </div>
           </div>
         </div>

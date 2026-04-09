@@ -51,25 +51,22 @@ export default function RecentSales() {
       <section className="w-full bg-white">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <h2 className="mb-8 text-center text-xl font-semibold uppercase tracking-wide" style={{ color: NAVY }}>
-            Quick Search by Property Type
+            Property Types
           </h2>
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
             {PROPERTY_TYPES.map((pt) => (
-              <a
+              <div
                 key={pt.label}
-                href="https://idx.mlspin.com/MLS.IDX/Search?AgentId=CN255841"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center rounded-lg border border-zinc-200 p-5 text-center transition hover:border-zinc-400 hover:shadow-md"
+                className="flex flex-col items-center rounded-lg border border-zinc-200 p-5 text-center"
               >
-                <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100 transition group-hover:bg-zinc-200">
+                <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-zinc-100">
                   <svg viewBox="0 0 24 24" className="h-7 w-7" style={{ fill: NAVY }}>
                     {pt.icon}
                   </svg>
                 </div>
                 <span className="font-semibold text-sm" style={{ color: NAVY }}>{pt.label}</span>
                 <span className="mt-0.5 text-xs text-zinc-500">{pt.sub}</span>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -89,7 +86,7 @@ export default function RecentSales() {
               </div>
             )}
             <iframe
-              src="https://idx.mlspin.com/MLS.IDX/Listings?agentId=CN255841&ff=1&vs=5bd0b2a8-ada4-4bb6-a4de-eeb063f4e8d1"
+              src="https://idx.mlspin.com/MLS.IDX/Listings?agentId=CN255841&ff=1&vs=5bd0b2a8-ada4-4bb6-a4de-eeb063f4e8d1&sortby=price&sortdir=desc"
               width="100%"
               style={{
                 border: "none",

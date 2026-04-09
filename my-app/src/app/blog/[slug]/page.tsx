@@ -157,7 +157,9 @@ export default async function PostPage({
 
           {/* CTA */}
           <a
-            href="mailto:Lrodriguez@sellinboston.com"
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0XZGYJmk-aEVgerXz9SYqAFMwPOTpJimBcW5HovqL9CfBXtgg_F8p-TEBlpLxPBMvPFSAPCby-"
+            target="_blank"
+            rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold text-white shadow-md transition hover:opacity-90"
             style={{ backgroundColor: NAVY }}
           >
