@@ -1,9 +1,17 @@
 module.exports = [
-"[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/postcss.config.mjs', file not found");
-e.code = 'MODULE_UNPARSABLE';
-throw e;
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+const config = {
+    plugins: {
+        "@tailwindcss/postcss": {}
+    }
+};
+const __TURBOPACK__default__export__ = config;
 }),
 "[externals]/path [external] (path, cjs)", ((__turbopack_context__, module, exports) => {
 

@@ -9,7 +9,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full" style={{ backgroundColor: NAVY }}>
+    <header className="w-full sticky top-0 z-50" style={{ backgroundColor: NAVY }}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Brand */}
         <div className="flex items-center gap-3">
@@ -25,9 +25,9 @@ export default function Navigation() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden items-center gap-8 text-sm font-semibold uppercase tracking-wide text-white md:flex">
-          <Link className="hover:text-zinc-300" href="/">Home</Link>
           <Link className="hover:text-zinc-300" href="/about">About</Link>
-          <Link className="hover:text-zinc-300" href="#contact">Contact</Link>
+          <Link className="hover:text-zinc-300" href="/blog">Blog</Link>
+          <Link className="hover:text-zinc-300" href="/contact">Contact</Link>
           <Link className="hover:text-zinc-300" href="/recent-sales">Recent Sales</Link>
         </nav>
 
@@ -76,13 +76,6 @@ export default function Navigation() {
         <nav className="flex flex-col gap-4 border-t border-white/20 px-4 py-6">
           <Link
             className="text-sm font-semibold uppercase tracking-wide text-white hover:text-zinc-300"
-            href="/"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            className="text-sm font-semibold uppercase tracking-wide text-white hover:text-zinc-300"
             href="/about"
             onClick={() => setMobileMenuOpen(false)}
           >
@@ -90,7 +83,14 @@ export default function Navigation() {
           </Link>
           <Link
             className="text-sm font-semibold uppercase tracking-wide text-white hover:text-zinc-300"
-            href="#contact"
+            href="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Blog
+          </Link>
+          <Link
+            className="text-sm font-semibold uppercase tracking-wide text-white hover:text-zinc-300"
+            href="/contact"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contact
