@@ -46,6 +46,7 @@ export default function ContactPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
+      if (!res.ok) throw new Error("Failed to send");
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please email Luis directly at Lrodriguez@sellinboston.com.");
