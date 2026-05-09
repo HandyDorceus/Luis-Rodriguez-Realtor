@@ -83,7 +83,7 @@ export default function About() {
             <div className="mx-auto md:mx-0">
               <div className="h-64 w-48 overflow-hidden rounded-lg shadow-lg md:h-72 md:w-56">
                 <Image
-                  src="/images/Headshot-Ai.png"
+                  src="/images/Headshot_2026.jpeg"
                   alt="Portrait of Luis Rodriguez"
                   width={400}
                   height={500}
